@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% import 'macros.html' as macros %}
+{%block contenido %}
+<br/>
+    <div class="row">
+        {% for oferta in ofertas %}
+            <div class="col-sm">
+                {{macros.mostrar_oferta(oferta)}}
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% macro mostrar_oferta(oferta) %}
+    <div class="card">
+        <img class="card-img-top" src="https://via.placeholder.com/330x250" at="imagen oferta">
+        <div class="card-body">
+            <h5 class="card-title">{{oferta['titulo']}}</h5>
+            <p class="card-text">{{oferta['empresa']}}</p>
+        </div>
+        <div class="card-body">
+            <a href="{{oferta['url']}}" class="card-link">ver oferta</a>
+        </div>
+    </div>
+{% endmacro %}
